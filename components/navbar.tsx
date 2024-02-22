@@ -1,18 +1,26 @@
 import Link from "next/link";
 
-import Container from "@/components/ui/container";
+import getBrands from "@/actions/get-brands";
 
-const Navbar = () => {
+import Container from "@/components/ui/container";
+import MainNav from "@/components/main-nav";
+
+export const revalidate = 0;
+
+const Navbar = async () => {
+  const brands = await getBrands();
+
   return (
-    <nav className="borber-b">
+    <div className="borber-b">
       <Container>
         <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center">
           <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
-            <p className="font-bold text-xl max-w-1 leading-none">LIT KICKS</p>
+            <p className="font-bold text-xl">LIT KICKS</p>
           </Link>
+          <MainNav data={brands} />
         </div>
       </Container>
-    </nav>
+    </div>
   );
 };
 
