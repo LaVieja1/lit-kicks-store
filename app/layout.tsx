@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 
 import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 
 import "./globals.css";
 
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={Acumin.className}>
+        <Navbar />
         {children}
         <Footer />
       </body>
