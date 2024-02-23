@@ -2,7 +2,7 @@
 
 import axios from "axios";
 import { toast } from "react-hot-toast";
-import { use, useEffect } from "react";
+import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
 import useCart from "@/hooks/use-card";
@@ -34,7 +34,7 @@ const Summary = () => {
     const response = await axios.post(
       `${process.env.NEXT_PUBLIC_API_URL}/checkout`,
       {
-        productsIds: items.map((item) => item.id),
+        productIds: items.map((item) => item.id),
       }
     );
 
