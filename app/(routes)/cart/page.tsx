@@ -7,6 +7,7 @@ import useCart from "@/hooks/use-card";
 import Container from "@/components/ui/container";
 
 import CartItem from "./_components/cart-item";
+import Summary from "./_components/summary";
 
 const CartPage = () => {
   const cart = useCart();
@@ -27,6 +28,7 @@ const CartPage = () => {
                 ))}
               </ul>
             </div>
+            <Summary />
           </div>
         </div>
       </Container>
