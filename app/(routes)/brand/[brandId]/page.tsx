@@ -11,7 +11,7 @@ import ProductCard from "@/components/ui/product-card";
 import Filter from "./_components/filter";
 import MobileFilters from "./_components/mobile-filters";
 
-export const revaldiate = 0;
+export const revalidate = 0;
 
 interface BrandPageProps {
   params: {
