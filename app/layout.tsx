@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
+import ModalProvider from "@/providers/modal-provider";
+
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
@@ -29,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={Acumin.className}>
+        <ModalProvider />
         <Navbar />
         {children}
         <Footer />
