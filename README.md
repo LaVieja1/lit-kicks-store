@@ -10,7 +10,6 @@ Proyecto FullStack ecommerce venta de sneakers - Diseño hecho por Sol Cano
 ## Stack
 
 - Next.js
-- Clerk
 - Server Actions
 - React
 - Prisma
