@@ -39,15 +39,15 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
   return (
     <div
       onClick={handleClick}
-      className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4"
+      className="bg-black group cursor-pointer p-3 space-y-4"
     >
       {/* Image and Actions */}
-      <div className="aspect-square rounded-xl bg-gray-100 relative">
+      <div className="aspect-square bg-gray-100 relative">
         <Image
           src={data?.images?.[0]?.url}
           fill
           alt="Image"
-          className="aspect-square object-cover rounded-md"
+          className="aspect-square object-fit"
         />
         <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5">
           <div className="flex gap-x-6 justify-center">
@@ -64,11 +64,15 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
       </div>
       {/* Description */}
       <div>
-        <p className="font-semibold text-lg">{data.name}</p>
-        <p className="text-sm text-gray-500">{data.brand.name}</p>
+        <p className="text-lg tracking-wider text-green font-black uppercase text-center">
+          {data.brand.name}
+        </p>
+        <p className="font-medium text-sm text-white/70 text-center font-nanum">
+          {data.name}
+        </p>
       </div>
       {/* Price */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-center">
         <Currency value={data?.price} />
       </div>
     </div>
