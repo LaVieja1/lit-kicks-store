@@ -31,7 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={Acumin.className}>
+      <body
+        className={`${Nanum.variable} ${Acumin.variable} bg-black text-white`}
+      >
         <ModalProvider />
         <ToastProvider />
         <Navbar />
