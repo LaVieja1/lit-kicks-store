@@ -49,7 +49,7 @@ const BrandPage: React.FC<BrandPageProps> = async ({
       </div>
 
       <div className="lg:flex-1 lg:px-0">
-        <h2 className="text-2xl font-bold text-green px-4 lg:px-0">
+        <h2 className="text-2xl font-bold text-green px-4 lg:px-0 uppercase">
           {brand.name}
         </h2>
         <div className="lg:-ml-8">
