@@ -47,7 +47,6 @@ const InfoProduct: React.FC<InfoProductProps> = ({ data }) => {
             style={{ backgroundColor: data?.color?.value }}
           />
         </div>
-        B
       </div>
       <div className="mt-10 flex items-center gap-x-3">
         <Button
