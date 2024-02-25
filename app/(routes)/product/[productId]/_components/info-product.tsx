@@ -1,13 +1,14 @@
 "use client";
 
 import { ShoppingCart } from "lucide-react";
+import { MouseEventHandler } from "react";
 
 import { Product } from "@/types";
+import useCart from "@/hooks/use-card";
+import getSizes from "@/actions/get-sizes";
 
 import Currency from "@/components/ui/currency";
 import Button from "@/components/ui/button";
-import { MouseEventHandler } from "react";
-import useCart from "@/hooks/use-card";
 
 interface InfoProductProps {
   data: Product;
@@ -46,6 +47,7 @@ const InfoProduct: React.FC<InfoProductProps> = ({ data }) => {
             style={{ backgroundColor: data?.color?.value }}
           />
         </div>
+        B
       </div>
       <div className="mt-10 flex items-center gap-x-3">
         <Button
