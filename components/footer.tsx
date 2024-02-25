@@ -12,7 +12,7 @@ import {
 const Footer = () => {
   return (
     <footer className="border-t-2 border-green h-[40vh] w-full mt-8 px-4 sm:px-6 lg:px-8 py-8 font-acumin">
-      <div className="flex flex-row flex-wrap justify-start gap-52 items-start">
+      <div className="flex flex-row flex-wrap justify-start gap-x-52 gap-y-12 items-start">
         <div className="flex flex-col items-start justify-center gap-1">
           <h4 className="text-base text-green font-bold mb-2">
             ABOUT LIT KICKS
