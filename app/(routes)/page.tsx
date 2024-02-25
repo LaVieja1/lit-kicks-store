@@ -19,7 +19,7 @@ const HomePage = async () => {
   return (
     <div className="space-y-10 pb-10 px-4 sm:px-6 lg:px-8">
       <div className="relative w-full h-[80vh]">
-        <Link href="/brand/7c739d8b-b0c8-4ccb-bc9d-d04d9a8d9221">
+        <Link href="/brand/75b91cc8-4790-4b4a-828f-9390f27a3ce3">
           <div className="hover:bg-green/30 w-full h-full absolute transition duration-300 z-10" />
           <Image
             fill
@@ -39,7 +39,7 @@ const HomePage = async () => {
         </h3>
         <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-x-24 gap-y-8">
           <div className="w-full relative">
-            <Link href="/brand/63afb93f-c660-415b-9922-1aab0ce66ca3">
+            <Link href="/brand/cf1ead46-bdeb-4986-81ee-3cfa8a19f4b2">
               <div className="hover:bg-green/30 w-full h-full absolute transition duration-300 z-10" />
               <Image
                 src={NikeImage}
@@ -53,7 +53,7 @@ const HomePage = async () => {
             </Link>
           </div>
           <div className="w-full relative">
-            <Link href="/brand/5854013a-e0a2-493b-9d8d-06c29a0f2974">
+            <Link href="/brand/4a17de0e-9a42-4150-9f27-cda35b44a3ba">
               <div className="hover:bg-green/30 w-full h-full absolute transition duration-300 z-10" />
               <Image
                 fill
@@ -68,7 +68,7 @@ const HomePage = async () => {
             </Link>
           </div>
           <div className="w-full relative">
-            <Link href="/brand/6310fdd8-d985-4c5c-9152-5bc49b038916">
+            <Link href="/brand/36582f78-3549-40c4-bbea-9c4df2a0ed21">
               <div className="hover:bg-green/30 w-full h-full absolute transition duration-300 z-10" />
               <Image
                 src={PumaImage}
