@@ -9,6 +9,7 @@ import JordanImage from "../../public/img/Jordan.webp";
 import NikeImage from "../../public/img/Nike.webp";
 import AdidasImage from "../../public/img/Adidas.webp";
 import PumaImage from "../../public/img/Puma.webp";
+import MilesImage from "../../public/img/Miles.jpg";
 
 export const revalidate = 0;
 
@@ -85,6 +86,26 @@ const HomePage = async () => {
 
       <div className="flex flex-col gap-y-8">
         <ProductList title="NEW ARRIVALS" items={products} />
+      </div>
+
+      <div className="w-full">
+        <h3 className="font-acumin text-green text-lg font-bold text-center py-2 mt-4">
+          FEATURED
+        </h3>
+        <div className="relative">
+          <Image
+            src={MilesImage}
+            alt="Miles"
+            className="w-full h-[50vh] object-cover"
+            priority
+          />
+          <h4 className="absolute top-1/4 left-0 px-10 text-green text-6xl max-w-2xl font-bold font-nanum hidden lg:block">
+            Miles Stewart&apos;s favorites
+          </h4>
+          <h4 className="absolute top-1/4 right-0 px-10 text-green text-8xl max-w-2xl font-extrabold font-nanum hidden lg:block">
+            {`;)`}
+          </h4>
+        </div>
       </div>
     </div>
   );
