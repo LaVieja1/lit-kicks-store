@@ -1,11 +1,14 @@
+import Link from "next/link";
+import Image from "next/image";
+
 import getProducts from "@/actions/get-products";
 
 import ProductList from "@/components/product-list";
-import Container from "@/components/ui/container";
-import Image from "next/image";
 
-import JordanImage from "../../public/img/ImagenlandingPage.webp";
-import Link from "next/link";
+import JordanImage from "../../public/img/Jordan.webp";
+import NikeImage from "../../public/img/Nike.webp";
+import AdidasImage from "../../public/img/Adidas.webp";
+import PumaImage from "../../public/img/Puma.webp";
 
 export const revalidate = 0;
 
@@ -28,6 +31,58 @@ const HomePage = async () => {
           </p>
         </Link>
       </div>
+
+      <div className="w-full">
+        <h3 className="text-green text-lg font-bold font-acumin text-center py-2 mt-6">
+          BRANDS
+        </h3>
+        <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-24">
+          <div className="w-full relative">
+            <Link href="/brand/63afb93f-c660-415b-9922-1aab0ce66ca3">
+              <div className="hover:bg-green/30 w-full h-full absolute transition duration-300 z-10" />
+              <Image
+                src={NikeImage}
+                alt="logo"
+                className="object-cover object-center"
+                priority
+              />
+              <p className="text-2xl tracking-wide text-black font-black font-nanum bg-green absolute z-20 top-1/2 right-36 py-2 px-10 hidden md:block lg:block">
+                NIKE
+              </p>
+            </Link>
+          </div>
+          <div className="w-full relative">
+            <Link href="/brand/5854013a-e0a2-493b-9d8d-06c29a0f2974">
+              <div className="hover:bg-green/30 w-full h-full absolute transition duration-300 z-10" />
+              <Image
+                fill
+                src={AdidasImage}
+                alt="logo"
+                className="object-cover object-center"
+                priority
+              />
+              <p className="text-2xl tracking-wide text-black font-black font-nanum bg-green absolute z-20 top-1/2 right-32 py-2 px-10 hidden md:block lg:block">
+                ADIDAS
+              </p>
+            </Link>
+          </div>
+          <div className="w-full relative">
+            <Link href="/brand/6310fdd8-d985-4c5c-9152-5bc49b038916">
+              <div className="hover:bg-green/30 w-full h-full absolute transition duration-300 z-10" />
+              <Image
+                src={PumaImage}
+                alt="logo"
+                className="object-cover object-center"
+                priority
+              />
+              <p className="text-2xl tracking-wide text-black font-black font-nanum bg-green absolute z-20 top-1/2 right-36 py-2 px-10 hidden md:block lg:block">
+                PUMA
+              </p>
+            </Link>
+          </div>
+        </div>
+      </div>
+
       <div className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8">
         <ProductList title="Featured Products" items={products} />
       </div>
