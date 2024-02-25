@@ -36,7 +36,7 @@ const HomePage = async () => {
         <h3 className="text-green text-lg font-bold font-acumin text-center py-2 mt-6">
           BRANDS
         </h3>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-24">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-x-24 gap-y-8">
           <div className="w-full relative">
             <Link href="/brand/63afb93f-c660-415b-9922-1aab0ce66ca3">
               <div className="hover:bg-green/30 w-full h-full absolute transition duration-300 z-10" />
